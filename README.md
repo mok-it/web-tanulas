@@ -25,13 +25,13 @@ Mindegyikhez megkapod a telepítési lépéseket, amikor sorra kerül.
 
 ## Leckék
 
-| #   | Lecke                                               | Mit építünk                                     |
-| --- | --------------------------------------------------- | ----------------------------------------------- |
-| 01  | [HTML, CSS, Tailwind](leckek/01-html-css-tailwind/) | A Feladatbank oldala, statikusan                |
-| 02  | JavaScript, TypeScript                              | A kártyák adatból generálódnak, kereső és szűrő |
-| 03  | Webes kommunikáció, fetch                           | Az adat már nem a kódban van, hálózatról jön    |
-| 04  | Backend: REST API és adatbázis                      | Saját szerver és adatbázis a Feladatbank mögé   |
-| 05  | React bevezetés                                     | Az egész frontend újraírva Reactben             |
+| #   | Lecke                                                      | Mit építünk                                        |
+| --- | ---------------------------------------------------------- | -------------------------------------------------- |
+| 01  | [HTML, CSS, Tailwind](leckek/01-html-css-tailwind/)        | A Feladatbank oldala, statikusan                   |
+| 02  | [JavaScript, TypeScript](leckek/02-javascript-typescript/) | A kártyák adatból generálódnak, kereső és számláló |
+| 03  | Webes kommunikáció, fetch                                  | Az adat már nem a kódban van, hálózatról jön       |
+| 04  | Backend: REST API és adatbázis                             | Saját szerver és adatbázis a Feladatbank mögé      |
+| 05  | React bevezetés                                            | Az egész frontend újraírva Reactben                |
 
 A leckék egymásra épülnek, de **nem függenek egymástól**: minden leckének saját `1-start/`
 mappája van, ami tartalmazza az előző lecke végeredményét. Ha kihagysz egyet, vagy nem
