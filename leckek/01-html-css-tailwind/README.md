@@ -3,7 +3,7 @@
 ## Mit fogsz csinálni?
 
 Megépíted a **Feladatbank** oldalát: egy fejlécet navigációval, alatta matekfeladatok
-kártyáit egy reszponzív rácsban, és egy láblécet. Ezt az oldalt a következő leckékben
+kártyáit egy **reszponzív** rácsban, és egy láblécet. Ezt az oldalt a következő leckékben
 fogjuk életre kelteni.
 
 Az út odáig három szakasz:
@@ -27,7 +27,8 @@ Nyisd meg VS Code-ban a `1-start/index.html` fájlt. Ennyi van benne:
 
 ```html
 <h1>Feladatbank</h1>
-Matekfeladatok egy helyen. <br />
+Matekfeladatok egy helyen.
+<br />
 Válassz témakört, és kezdj gondolkodni!
 <p>Sakktábla lefedése</p>
 <p>Egy 8×8-as sakktábláról levágunk két átellenes sarokmezőt.</p>
@@ -41,8 +42,8 @@ böngésző tölti be.
 
 Hasonlítsd össze a kódot az eredménnyel. Mit veszel észre?
 
-- A `<h1>` nagy, vastag betűvel jelent meg, ez egy **címsor**.
-- A két `<p>` külön sorba került, és van köztük egy kis hely, ezek **bekezdések**.
+- A `<h1>` nagy, vastag betűvel jelent meg, ez egy **címsor** (heading).
+- A két `<p>` külön sorba került, és van köztük egy kis hely, ezek **bekezdések** (paragraph).
 - A `<br />` sortörést csinált, de a két sor közé nem tett akkora helyet, mint a bekezdések
   közé.
 - A kacsacsőrös részek maguk **nem látszanak** az oldalon. Ezek nem a tartalom, hanem a
@@ -61,7 +62,7 @@ Amit írtunk, az HTML: _HyperText Markup Language_. Egy HTML dokumentum **elemek
 
 - Az elem elejét és végét egy **tag** (címke) jelzi.
 - A **nyitó tag** az elem típusa kacsacsőrök között: `<p>`
-- A két tag között vannak az elem **gyerekei**: további elemek vagy egyszerű szöveg.
+- A két tag között vannak az elem **gyerekei** (children): további elemek vagy egyszerű szöveg.
 - A **záró tag** ugyanaz, csak a típus előtt egy perjellel: `</p>`
 - Ha egy elemnek nem lesz gyereke, rövidebben is írható: `<br />`. Egy sortörésbe nyilván
   nem akarunk semmit beletenni.
@@ -235,7 +236,7 @@ selector {
 }
 ```
 
-- A **selector** megmondja, **mire** vonatkozik a szabály. A `body` az összes `<body>`
+- A **selector** megmondja, **mire** vonatkozik a **szabály** (rule). A `body` az összes `<body>`
   elemre, amiből egy van.
 - Utána kapcsos zárójelben jönnek a **tulajdonság: érték** párok, pontosvesszővel elválasztva.
 
@@ -340,7 +341,7 @@ Most már kártyának néz ki.
 
 ### A doboz-modell
 
-Minden HTML elem egy téglalap, aminek négy rétege van kívülről befelé:
+Minden HTML elem egy téglalap, aminek négy rétege van kívülről befelé. Ez a **doboz-modell**:
 
 ```
 ┌─────────────────────── margin ────────────────────────┐
@@ -632,8 +633,8 @@ Egészítsd ki a meglévő kártya osztálylistáját két osztállyal a végén
 
 Vidd rá az egeret a kártyára. Megemelkedik.
 
-Aminek most örülsz, annak CSS-ben **pszeudo osztály** a neve. Egy pszeudo osztály bármelyik
-selector mögé odaírható, és a szabály érvényességét az elem egy konkrét állapotára szűkíti.
+Aminek most örülsz, annak CSS-ben **pszeudo osztály** (pseudo-class) a neve. Egy pszeudo
+osztály bármelyik selector mögé odaírható, és a szabály érvényességét az elem egy konkrét állapotára szűkíti.
 Kézzel írt CSS-ben így nézne ki:
 
 ```css
@@ -704,8 +705,8 @@ hogy mást raknál a helyére.**
 
 ### Pszeudo elemek
 
-Van egy másik fajta is, ami hasonlóan néz ki, de mást csinál. A **pszeudo elem** nem
-állapotra szűkít, hanem létrehoz egy virtuális gyerekelemet, ami nincs benne a HTML-ben.
+Van egy másik fajta is, ami hasonlóan néz ki, de mást csinál. A **pszeudo elem**
+(pseudo-element) nem állapotra szűkít, hanem létrehoz egy virtuális gyerekelemet, ami nincs benne a HTML-ben.
 Megkülönböztetésül **dupla** kettősponttal írjuk:
 
 ```css
@@ -867,8 +868,8 @@ Két dolog fontos ebben:
   kényelmesebbé teszi: nem kell külön helyen megírnod, és nem kell nevet adnod neki.
 
 Innen látszik, miért **mobile-first** a Tailwind: a `@media (width >= 40rem)` csak
-**felfelé** szab feltételt. Az előtag nélküli osztály ezért mindig érvényes, a breakpointos
-pedig felülírja nagyobb kijelzőn. Ezért nincs a "mobil" méretnek saját előtagja: az az
+**felfelé** szab feltételt. Az előtag nélküli osztály ezért mindig érvényes, a töréspontos
+(breakpoint) pedig felülírja nagyobb kijelzőn. Ezért nincs a "mobil" méretnek saját előtagja: az az
 alapeset.
 
 A töréspontok:
